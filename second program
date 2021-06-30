@@ -1,0 +1,26 @@
+import java.util.*;
+class Main
+{
+	public static void main(String[] args) {
+	    Scanner sc=new Scanner(System.in);
+	    int n,d,i,s=0;
+	    System.out.println("ENTER THE NUMBER");
+	    n=sc.nextInt();
+	    for(i=n;i>0;i/=10)
+	    {
+	        d=i%10;s=d+s;
+	    }
+	    if(n%s==0)
+		System.out.println("HARSHAD NUMBER");
+		else
+		System.out.println("NOT A HARSHAD NUMBER:");
+	}
+}
+-------------------------------------------------------------------------------------------------
+OUTPUT:
+ENTER THE NUMBER:
+126
+HARSHAD NUMBER
+ENTER THE NUMBER:
+66
+NOT A HARSHAD NUMBER
